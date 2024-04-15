@@ -1,0 +1,215 @@
+/************************
+* Color variables
+*************************/
+:root {
+  --pizza: #0a550a;
+  --hamburger: #530201;
+  --hotdog: #392706;
+  --pancake: #b6790a;
+  --ice-cream: #c83f49;
+  --drinks: #516d8b;
+}
+
+/************************
+* Basics
+*************************/
+* { box-sizing: border-box;}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+  font: normal 1rem/1.25 Verdana, sans-serif;
+  word-break: break-word;
+  background-color: #fafafa;
+}
+
+div {
+  margin-bottom: 1rem;
+  padding: .5rem .25rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: .5rem 0;
+  color: #333;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-style: italic;
+  line-height: 1;
+  color: #a52a2a;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  line-height: 1.125;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: clamp(1rem, 2.5vw, 2.25rem);
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 .5rem 0;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.ingredients {
+  margin: 0 auto;
+  max-width: calc(100% - 3rem);
+  width: 1000px;
+  font-size: .75rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Colors for the categories */
+.pizzas h2 {
+  color: var(--pizza);
+}
+
+.hamburgers h2 {
+  color: var(--hamburger);
+}
+
+.hotdogs h2 {
+  color: var(--hotdog);
+}
+
+.pancakes h2 {
+  color: var(--pancake);
+}
+
+.ice-creams h2 {
+  color: var(--ice-cream);
+}
+
+.drinks h2 {
+  color: var(--drinks);
+}
+
+/************************
+* Pizzas
+*************************/
+/* Setting the counter */
+.pizzas {
+  counter-reset: pizza;
+}
+
+/* Incrementing the Items */
+.pizza {
+  counter-increment: pizza;
+}
+
+/* The CSS-Counter Function */
+.pizza::before {
+    content:  "\1F37A " " " counter(pizza) ". ";
+    color: var(--pizza);
+}
+
+/************************
+* Hamburgers
+*************************/
+/* Setting the counter */
+.hamburgers {
+  counter-reset: hamburger;
+}
+
+/* Incrementing the Items */
+.hamburger {
+  counter-increment: hamburger;
+}
+
+/* The CSS-Counter Function */
+.hamburger::before {
+    content:  "\1F943 " " " counter(hamburger) ". ";
+    color: var(--hamburger);
+}
+
+/************************
+* Hotdogs
+*************************/
+/* Setting the counter */
+.hotdogs {
+  counter-reset: hotdog;
+}
+
+/* Incrementing the Items */
+.hotdog {
+  counter-increment: hotdog;
+}
+
+/* The CSS-Counter Function */
+.hotdog::before {
+    content:  "\1F379 " " " counter(hotdog) ". ";
+    color: var(--hotdog);
+}
+
+/************************
+* Pancakes
+*************************/
+/* Setting the counter */
+.pancakes {
+  counter-reset: pancake;
+}
+
+/* Incrementing the Items */
+.pancake {
+  counter-increment: pancake;
+}
+
+/* The CSS-Counter Function */
+.pancake::before {
+    content:  "\1F9C3 " " " counter(pancake) ". ";
+    color: var(--pancake);
+}
+
+/************************
+* ice-cream
+*************************/
+/* Setting the counter */
+.ice-creams {
+  counter-reset: ice-cream;
+}
+
+/* Incrementing the Items */
+.ice-cream {
+  counter-increment: ice-cream;
+}
+
+/* The CSS-Counter Function */
+.ice-cream::before {
+    content:  "\1F368 " " " counter(ice-cream) ". " " Ice-Cream ";
+    color: var(--ice-cream);
+}
+
+/************************
+* Drinks
+*************************/
+/* Setting the counter */
+.drinks {
+  counter-reset: drink;
+}
+
+/* Incrementing the Items */
+.drink {
+  counter-increment: drink;
+}
+
+/* The CSS-Counter Function */
+.drink::before {
+    content:  "\1F964 " " " counter(drink) ". " " Drink ";
+    color: var(--drinks);
+}
