@@ -70,7 +70,7 @@ p {
   margin: 0 auto;
   max-width: calc(100% - 3rem);
   width: 1000px;
-  font-size: .75rem;
+  font-size: 1rem;
   font-style: italic;
   color: #666;
 }
@@ -115,7 +115,7 @@ p {
 
 /* The CSS-Counter Function */
 .pizza::before {
-    content:  "\1F37A " " " counter(pizza) ". ";
+    content:  "\1F37A ";
     color: var(--pizza);
 }
 
@@ -134,7 +134,7 @@ p {
 
 /* The CSS-Counter Function */
 .hamburger::before {
-    content:  "\1F943 " " " counter(hamburger) ". ";
+    content:  "\1F943 ";
     color: var(--hamburger);
 }
 
@@ -153,7 +153,7 @@ p {
 
 /* The CSS-Counter Function */
 .hotdog::before {
-    content:  "\1F379 " " " counter(hotdog) ". ";
+    content:  "\1F379 ";
     color: var(--hotdog);
 }
 
@@ -172,7 +172,7 @@ p {
 
 /* The CSS-Counter Function */
 .pancake::before {
-    content:  "\1F9C3 " " " counter(pancake) ". ";
+    content:  "\1F9C3 ";
     color: var(--pancake);
 }
 
@@ -191,7 +191,7 @@ p {
 
 /* The CSS-Counter Function */
 .ice-cream::before {
-    content:  "\1F368 " " " counter(ice-cream) ". " " Ice-Cream ";
+    content:  "\1F368 ";
     color: var(--ice-cream);
 }
 
@@ -210,6 +210,6 @@ p {
 
 /* The CSS-Counter Function */
 .drink::before {
-    content:  "\1F964 " " " counter(drink) ". " " Drink ";
+    content:  "\1F964 ";
     color: var(--drinks);
 }
